@@ -58,7 +58,9 @@ public class StatsServiceTest {
 
     @Test
     //6
-    public void aboveAverageSales() {
+    //public void aboveAverageSales()
+    public void average()
+    {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMonth = 5;

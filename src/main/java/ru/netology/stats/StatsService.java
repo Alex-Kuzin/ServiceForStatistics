@@ -24,13 +24,13 @@ public class StatsService {
 
     public int totalAmountSales(int[] sales) {
         int sumMonth = 0;
-        for (int i = 0; i < sales.length; i++) sumMonth += sales[i];
+        for (int i = 0; i < sales.length; i++) {sumMonth += sales[i];}
         return sumMonth;
     }
 
     public int averageNumberOfSales(int[] sales) {
         int sumMonth = 0;
-        for (int i = 0; i < sales.length; i++) sumMonth += sales[i];
+        for (int i = 0; i < sales.length; i++) {sumMonth += sales[i];}
         int arevSumMonth = sumMonth / sales.length;
         return arevSumMonth;
     }
@@ -48,7 +48,7 @@ public class StatsService {
         return minSalesGeneral;
     }
 
-    public int aboveAverageSales(int[] sales) {
+    /*public int aboveAverageSales(int[] sales) {
         StatsService service = new StatsService();
         int actualMonth = service.averageNumberOfSales(sales);
         int maxSalesGeneral = 0;
@@ -58,6 +58,17 @@ public class StatsService {
             }
 
         }
-        return maxSalesGeneral;
+        return maxSalesGeneral;*/
+
+    public int average(int[] sales) {
+        int actualMonth = averageNumberOfSales(sales);
+            int maxSalesGeneral = 0;
+            for (int i = 0; sales.length > i; i++) {
+                if (sales[i] > actualMonth) {
+                    maxSalesGeneral++;
+                }
+
+            }
+            return maxSalesGeneral;
     }
 }
