@@ -35,8 +35,9 @@ public class StatsService {
     }
 
     public int salesLessAver(int[] sales) {
-        StatsService service = new StatsService();
-        int actualMonth = service.averageNumberOfSales(sales);
+       // StatsService service = new StatsService();
+      //  int actualMonth = service.averageNumberOfSales(sales);
+        int actualMonth = averageNumberOfSales(sales);
         int minSalesGeneral = 0;
         for (int i = 0; sales.length > i; i++) {
             if (sales[i] < actualMonth) {
@@ -48,8 +49,9 @@ public class StatsService {
     }
 
     public int aboveAverageSales(int[] sales) {
-        StatsService service = new StatsService();
-        int actualMonth = service.averageNumberOfSales(sales);
+       // StatsService service = new StatsService();
+       // int actualMonth = service.averageNumberOfSales(sales);
+        int actualMonth = averageNumberOfSales(sales);
         int maxSalesGeneral = 0;
         for (int i = 0; sales.length > i; i++) {
             if (sales[i] > actualMonth) {
