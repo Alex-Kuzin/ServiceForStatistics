@@ -31,12 +31,7 @@ public class StatsService {
     }
 
     public int averageNumberOfSales(int[] sales) {
-        StatsService service = new StatsService();
-        int actualMonth = service.totalAmountSales(sales);
-        // int sumMonth = 0;
-        // for (int i = 0; i < sales.length; i++) {sumMonth += sales[i];}
-        int arevSumMonth = actualMonth / sales.length;
-        return arevSumMonth;
+        return totalAmountSales(sales) / sales.length;
     }
 
     public int salesLessAver(int[] sales) {

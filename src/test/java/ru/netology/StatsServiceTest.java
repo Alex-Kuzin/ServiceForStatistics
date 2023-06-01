@@ -7,7 +7,6 @@ import ru.netology.stats.StatsService;
 public class StatsServiceTest {
 
     @Test
-    //1
     public void totalAmountAllTime() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -17,7 +16,6 @@ public class StatsServiceTest {
     }
 
     @Test
-    //2
     public void averageNumberOfSales() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -27,7 +25,6 @@ public class StatsServiceTest {
     }
 
     @Test
-    //4
     public void shouldMinFindTheLast() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -37,7 +34,6 @@ public class StatsServiceTest {
     }
 
     @Test
-    //3
     public void shouldMaxFindTheLast() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -47,7 +43,6 @@ public class StatsServiceTest {
     }
 
     @Test
-    //5
     public void belowAverageSaleses() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -57,8 +52,6 @@ public class StatsServiceTest {
     }
 
     @Test
-    //6
-    //public void aboveAverageSales()
     public void average()
     {
         StatsService service = new StatsService();
